@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html class="">
+
+	<head>
+	
+		<!--
+		css code (non functional)
+		
+	background: url("file:///C:/Users/Conner%20Batson/Documents/html/portfolio_site/resources/pictures/khao_sam_roi_yot_national_park_thailand.jpg") no-repeat;
+	background-attachment: fixed; 
+	background-size: cover;
+		-->
+	
+		<title>Portfolio</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="..\styles\stylemain.css">
+		
+		<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+		<!--
+		-->
+	
+	</head>
+
+	<body class="main_page">
+		<div id="loader" class="center" style="display: flex; position: fixed;"></div>
+		
+		<div id="" class="" style="width: 100%; height: 100%;">
+		
+			<div id="topnav" class="topnav" style="position: fixed; top: 0px">
+			
+				<div class="pagination_section">
+			
+				<!--
+					Pagination section. In order, left to right:
+						- main page
+						- pictures
+						- summary
+						- resume
+						- skills
+						- linkedin website linked
+					Planned:
+						- indeed website linked
+				-->
+				
+					<a href="..\pages\portfolio_main.html" class="active" title="Main page"><ion-icon name="home"></a>
+					<a href="..\pages\pictures_page.html" class="nav_button" title="Pictures"><ion-icon name="image"></ion-icon></a>
+					<a href="..\pages\summary_page.html" class="nav_button" title="Summary"><ion-icon name="person"></ion-icon></a>
+					<a href="..\pages\resume_page.html" class="nav_button" title="Resume"><ion-icon name="paper"></ion-icon></a>
+					<a href="..\pages\skills_page.html" class="nav_button" title="Skills"><ion-icon name="medkit"></ion-icon></a>
+					
+					<div class="float_right">
+					
+						<a href="https://www.linkedin.com/" class="nav_button" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+						
+					</div>
+				
+				</div>
+			
+			</div>
+			
+			<div class="main_1">
+				
+				<div class="center container1">
+					<div class="align-center left_div glass_container">
+						<h2>Identity</h2>
+						<h3>Official Name</h3>
+						<p>Conner James Batson</p>
+						<h3>Preferred Name</h3>
+						<p>Conner Batson</p>
+					</div>
+					
+					<div class="align-center left_div glass_container">
+						<h2>Date</h2>
+						<p>Last edited Thursday, February 18th, 2022, at 7:50 PM</p>
+						<p id="displayDateTime"></p>
+						
+						<script>
+							var today = new Date();
+							var date = (today.getMonth() + 1) + ' / ' + today.getDate()+ ' / ' + today.getFullYear();
+							var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+							document.getElementById("displayDateTime").innerHTML = 'Today is ' + date + ' (month/day/year)<br>The time is ' + time + ' military time';
+						</script>
+						
+					</div>
+					
+					<div class="align-center left_div glass_container">
+						<h2>Contact Info</h2>
+						<h3>Primary Contact</h3>
+						<p>cjbatson2@gmail.com</p>
+						<p>(360) 842-4748</p>
+						<h3>Secondary Contact</h3>
+						<p>(360) 263-6797</p>
+						<h3>Emergency Contact</h3>
+						<p>(360) 213-5458</p>
+						<h3>Mailing Address</h3>
+						<p>40411 NE 21st Avenue, Woodland, WA, 98674</p>
+					</div>
+					
+					<div class="align-center left_div glass_container">
+						<h2>General</h2>
+						<li>
+							<ul>Bachelor of Science in Computer Science at Washington State University</ul>
+							<ul>Graduated magna cum laude at Washington State University</ul>
+							<ul>Associate of Science in Computer Science at Clark College</ul>
+							<ul>Graduated with honors at Clark College</ul>
+						</li>
+					</div>
+					
+					<div class="align-center left_div glass_container">
+						<h2>Links</h2>
+						<h3>Navigation links</h3>
+						<a href="..\pages\pictures_page.html" title="Pictures"><ion-icon name="image"></ion-icon></a>
+						<a href="..\pages\summary_page.html" title="Summary"><ion-icon name="person"></ion-icon></a><br>
+						<a href="..\pages\resume_page.html" title="Resume"><ion-icon name="paper"></ion-icon></a>
+						<a href="..\pages\skills_page.html" title="Skills"><ion-icon name="medkit"></ion-icon></a><br>
+						<h3>You can also find me on...</h3>
+						<a href="https://www.linkedin.com/">LinkedIn</a><br>
+						<a href="https://www.indeed.com/">Indeed</a>
+					</div>
+					
+					<div class="align-center left_div glass_container">
+						<h2>Miscellaneous</h2>
+						<li>
+							<ul>Collector of magnets and postcards</ul>
+							<ul>Familiar with game development</ul>
+							<ul>Dreams of going to New Zealand</ul>
+							<ul>Interested in Pokemon, video games, and anime</ul>
+							<ul>Likes Kurzgesagt, Jacksepticeye, and Looney Tunes</ul>
+							<ul>Currently job searching in my field</ul>
+						</li>
+					</div>
+				</div>
+				
+			</div>
+		
+		</div>
+		
+		<!-- Test script for when elements are loading. Credit to GeeksForGeeks for current solution. -->
+		<script>
+			document.onreadystatechange = function() {
+				if (document.readyState !== "complete") {
+					document.querySelector("body").style.visibility = "hidden";
+					document.querySelector("#loader").style.visibility = "visible";
+				} else {
+					document.querySelector("#loader").style.display = "none";
+					document.querySelector("body").style.visibility = "visible";
+				}
+			};
+		</script>
+	
+	</body>
+
+</html>

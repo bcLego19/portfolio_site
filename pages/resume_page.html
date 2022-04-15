@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<title>Portfolio/Resume</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="..\styles\stylemain.css">
+		
+		<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+		<!--
+			Resume page html document. Contains an iframe with the pdf of an experience-style resume.
+			Most recent update is January 31st, 2022; This document was loaded February 6, 2022.
+		-->
+	
+	</head>
+
+	<body style="overflow: hidden; height: 100%">
+	
+		<div id="topnav" class="topnav" style="position: fixed; top: 0px">
+			
+			<div class="pagination_section">
+			
+				<!--
+					Pagination section. In order, left to right:
+						- main page
+						- pictures
+						- summary
+						- resume
+						- skills
+						- linkedin website linked
+					Planned:
+						- indeed website linked
+				-->
+				
+				<a href="..\pages\portfolio_main.html" class="nav_button" title="Main page"><ion-icon name="home"></a>
+				<a href="..\pages\pictures_page.html" class="nav_button" title="Pictures"><ion-icon name="image"></ion-icon></a>
+				<a href="..\pages\summary_page.html" class="nav_button" title="Summary"><ion-icon name="person"></ion-icon></a>
+				<a href="..\pages\resume_page.html" class="nav_button" title="Resume"><ion-icon name="paper"></ion-icon></a>
+				<a href="..\pages\skills_page.html" class="active" title="Skills"><ion-icon name="medkit"></ion-icon></a>
+					
+				<div class="float_right">
+					
+					<a href="https://www.linkedin.com/" class="nav_button" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+						
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="nav_padded main_1">
+		
+			<iframe src="..\resources\documents\Resume_FinalDraft.pdf" width="100%" height="100%"></iframe>
+		
+		</div>
+	
+	</body>
+
+</html>
